@@ -1,0 +1,18 @@
+﻿<Window x:Class="TeriLoyalty.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TeriLoyalty"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="250" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="73*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Запишите название:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Height="25" Margin="10,92,0,0"/>
+        <TextBox Grid.Column="1" Name="loyaltyBox" HorizontalAlignment="Left" Height="49" Margin="10,80,0,0" TextWrapping="Wrap" Text="{Binding loyalty}" VerticalAlignment="Top" Width="257"/>
+        <Button Grid.Column="1" Content="Сохранить" Name="BtnSaveText" Click="BtnSaveText_Click" HorizontalAlignment="Left" Margin="10,161,0,0" VerticalAlignment="Top" Height="39" Width="88"/>
+    </Grid>
+</Window>

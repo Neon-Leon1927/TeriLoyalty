@@ -1,0 +1,21 @@
+﻿<Window x:Class="TeriLoyalty.StatusWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TeriLoyalty"
+        mc:Ignorable="d"
+        Title="StatusWindow" Height="350" Width="550">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="142*"/>
+            <RowDefinition Height="25*"/>
+        </Grid.RowDefinitions>
+        <DataGrid x:Name="DStatusClients" AutoGenerateColumns="False" IsReadOnly="True" SelectionChanged="DStatusClients_SelectionChanged" Margin="10,10,10,10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ФИО" Binding="{Binding FIO}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Статус" Binding="{Binding Status}" Width="*"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

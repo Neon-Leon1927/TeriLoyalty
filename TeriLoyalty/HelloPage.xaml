@@ -1,0 +1,23 @@
+﻿<Page x:Class="TeriLoyalty.HelloPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TeriLoyalty"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="HelloPage">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="41*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Рады вас видеть в TeriShop!" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Top" Height="22" Width="192" Margin="0,10,0,0"></TextBlock>
+        <TextBlock Text="Начнём покупки?" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Top" Height="22" Width="122" Margin="0,37,0,0"></TextBlock>
+        <TextBlock Text="или" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Top" Height="22" Width="28" Margin="0,70,0,0" Grid.Row="1"></TextBlock>
+        <Button Content="Зарегистрироваться" Name="BtnRegist" Click="BtnRegist_Click" HorizontalAlignment="Center" Height="51" Margin="0,14,0,0" Grid.Row="1" VerticalAlignment="Top" Width="158" Background="#FF16D62B"/>
+        <Button Content="Войти" Name="BtnLogin" Click="BtnLogin_Click" HorizontalAlignment="Center" Height="46" Margin="0,98,0,0" Grid.Row="1" VerticalAlignment="Top" Width="158" Background="#FF16D62B"/>
+        <Frame Name="HelloFrame" Grid.RowSpan="2"></Frame>
+    </Grid>
+</Page>
